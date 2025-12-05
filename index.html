@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.P - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <h1>M.A.P</h1>
+                <p>Me Ajude a Programar</p>
+            </div>
+            <div class="illustration">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="40" y="60" width="120" height="80" rx="5" fill="#667eea" opacity="0.2"/>
+                    <rect x="50" y="70" width="100" height="60" rx="3" fill="#667eea" opacity="0.4"/>
+                    <line x1="60" y1="85" x2="100" y2="85" stroke="#667eea" stroke-width="2"/>
+                    <line x1="60" y1="95" x2="130" y2="95" stroke="#667eea" stroke-width="2"/>
+                    <line x1="60" y1="105" x2="110" y2="105" stroke="#667eea" stroke-width="2"/>
+                    <circle cx="100" cy="40" r="15" fill="#764ba2" opacity="0.6"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="form-container">
+                <h2 id="form-title">Entrar</h2>
+                <p class="subtitle">Bem-vindo de volta ao M.A.P</p>
+                
+                <form id="auth-form">
+                    <div class="input-group" id="name-group" style="display: none;">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Digite seu nome">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    
+                    <div class="input-group" id="confirm-password-group" style="display: none;">
+                        <label for="confirm-password">Confirmar Senha</label>
+                        <input type="password" id="confirm-password" placeholder="••••••••">
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" id="submit-btn">Entrar</button>
+                </form>
+                
+                <div class="toggle-form">
+                    <p id="toggle-text">Não tem uma conta? <a href="#" id="toggle-link">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
